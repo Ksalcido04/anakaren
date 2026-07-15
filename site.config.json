@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Ana Glam and Glow Makeup Artistry",
+    "description": "Bridal and editorial makeup artistry — soft, luminous looks for weddings, portraits, and special occasions."
+  },
+  "brand": {
+    "name": "Ana Glam and Glow",
+    "tagline": "Bridal & editorial makeup artistry"
+  },
+  "theme": {
+    "colors": {
+      "ivory": "#FBF7F4",
+      "blush": "#E8C4C0",
+      "plum": "#4A2E35",
+      "gold": "#B8935F",
+      "charcoal": "#3A3438",
+      "rose": "#C97B84"
+    }
+  },
+  "hero": {
+    "eyebrow": "Bridal & editorial makeup artistry",
+    "headline": "Makeup that feels like",
+    "headlineEmphasis": "you",
+    "headlineSuffix": ", only more radiant",
+    "lede": "Soft, luminous, long-wearing makeup for weddings, portraits, and special occasions — tailored to your skin and your story.",
+    "ctaPrimary": "Book an appointment",
+    "ctaSecondary": "View my work",
+    "image": ""
+  },
+  "about": {
+    "eyebrow": "The artist",
+    "heading": "Hello, I'm Ana",
+    "paragraphs": [
+      "I've spent the last several years helping brides, models, and everyday clients feel like the best version of themselves — one soft blend at a time. My approach favors skin that still looks like skin, colors that flatter rather than mask, and a finish that photographs beautifully and lasts all day.",
+      "Every face is different, so every appointment starts with a conversation: your skin type, the look you're picturing, and the moment you're getting ready for."
+    ],
+    "image": ""
+  },
+  "services": {
+    "eyebrow": "Offerings",
+    "heading": "Services",
+    "items": [
+      {
+        "title": "Bridal",
+        "price": "From $250",
+        "description": "Trial session plus wedding-day application, designed to hold through tears, dancing, and every photo."
+      },
+      {
+        "title": "Special event",
+        "price": "From $120",
+        "description": "Formals, parties, photoshoots — a polished look tailored to the occasion and your outfit."
+      },
+      {
+        "title": "Editorial & creative",
+        "price": "From $180",
+        "description": "Concept-driven makeup for shoots, lookbooks, and portfolios, built from a mood board or brief."
+      },
+      {
+        "title": "Bridal party",
+        "price": "From $95 <span style=\"opacity:.7\">/ person</span>",
+        "description": "Coordinated, camera-ready looks for bridesmaids and family, scheduled alongside the bride."
+      },
+      {
+        "title": "Makeup lesson",
+        "price": "From $150",
+        "description": "A one-on-one session teaching your own routine — everyday, glam, or both."
+      },
+      {
+        "title": "Add-ons",
+        "price": "Varies",
+        "description": "Lashes, airbrush finish, touch-up kits, and travel to your venue."
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Recent work",
+    "heading": "Portfolio",
+    "note": "Placeholder tiles — swap in your own photos.",
+    "items": [
+      { "label": "Bridal, June", "image": "" },
+      { "label": "Editorial shoot", "image": "" },
+      { "label": "Golden hour glam", "image": "" },
+      { "label": "Soft everyday", "image": "" },
+      { "label": "Bridal party", "image": "" },
+      { "label": "Studio portrait", "image": "" }
+    ]
+  },
+  "testimonial": {
+    "quote": "She listened to exactly what I wanted, and somehow made me look like the best version of myself. Everyone at the wedding asked who did my makeup.",
+    "cite": "— A recent bride"
+  },
+  "booking": {
+    "heading": "Let's find your date",
+    "text": "Appointments are booked through my online calendar — pick a time that works for you and I'll confirm within a day.",
+    "calendlyUrl": "https://calendly.com/wrenandrouge/consult",
+    "ctaLabel": "Check availability"
+  },
+  "contact": {
+    "email": "hello@wrenandrouge.com",
+    "phone": "(719) 555-0142",
+    "location": "Colorado Springs, CO"
+  },
+  "social": {
+    "instagram": "https://instagram.com/wrenandrouge",
+    "pinterest": "",
+    "tiktok": ""
+  },
+  "footer": {
+    "copyrightYear": 2026,
+    "locationBlurb": "Bridal & editorial makeup artistry, based in Colorado Springs and available to travel."
+  }
+}

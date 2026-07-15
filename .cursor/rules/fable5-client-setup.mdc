@@ -1,0 +1,51 @@
+---
+description: Fable 5 workflow for customizing and deploying makeup-artist client sites
+alwaysApply: true
+---
+
+# Makeup Artist Client Site — Fable 5 Setup
+
+## Client Brief (fill in at session start)
+
+```
+- Business name:
+- Tagline:
+- Domain (Vercel custom domain):
+- Calendly URL:
+- Contact: email, phone, city/state
+- Social: Instagram, Pinterest, TikTok URLs
+- Services + pricing: (list or "use template defaults")
+- Portfolio images: paths or "use placeholders"
+- Color overrides: yes/no + hex values
+```
+
+When the brief is complete, act — do not re-survey options or narrate plans you will not pursue.
+
+## Project context
+
+- Config-driven static landing page for makeup artists
+- **Source of truth:** `site.config.json` + `assets/`
+- **Build:** `npm run build` → `dist/index.html`
+- **Deploy:** Vercel (`vercel.json`); custom domain in project Settings → Domains
+- **Never** put client content in `templates/` — only in config
+
+## Fable 5 behavior
+
+- **Minimize scope:** Update config, assets, and deploy docs only. Preserve layout/CSS unless asked.
+- **Autonomous prep:** Run build and verify without asking for reversible steps.
+- **Checkpoint:** Pause only for DNS/domain credentials, destructive git ops, or missing client-only info (Calendly URL, real photos).
+- **Verify before done:** Run `npm run build`; confirm `dist/index.html` reflects the brief. Report failures with output.
+- **Final summary:** Lead with outcome ("Site built and ready to deploy"), then what changed and the next manual step (DNS if applicable). Write complete sentences — no arrow chains.
+- **Parallel work:** Delegate independent asset audit or build verification to subagents when useful.
+- **No reasoning echo:** Do not transcribe internal reasoning in user-facing text.
+
+## Workflow
+
+1. Read Client Brief — ask only for missing required fields
+2. Update `site.config.json` from the brief
+3. Place images in `assets/`; set paths in config (`hero.jpg` or `assets/hero.jpg`)
+4. Run `npm run build` and spot-check output
+5. Confirm `vercel.json` is present; document Vercel deploy steps if needed
+6. If domain provided, document custom domain DNS steps (registrar CNAME/A → Vercel)
+
+When describing a problem or reviewing the site without a change request, report findings and stop — do not apply fixes until asked.

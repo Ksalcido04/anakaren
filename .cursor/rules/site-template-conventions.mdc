@@ -1,0 +1,46 @@
+---
+description: Config schema and template conventions for the makeup artist site
+globs: site.config.json,site.config.example.json,templates/**,scripts/**,assets/**
+alwaysApply: false
+---
+
+# Site Template Conventions
+
+## Config schema (`site.config.json`)
+
+Required top-level keys: `meta`, `brand`, `theme`, `hero`, `about`, `services`, `portfolio`, `testimonial`, `booking`, `contact`, `social`, `footer`.
+
+| Section | Shape |
+|---------|-------|
+| `meta` | `{ title, description }` |
+| `brand` | `{ name, tagline }` |
+| `theme.colors` | `{ ivory, blush, plum, gold, charcoal, rose }` — hex strings |
+| `hero` | `{ eyebrow, headline, headlineEmphasis, headlineSuffix, lede, ctaPrimary, ctaSecondary, image }` |
+| `about` | `{ eyebrow, heading, paragraphs[], image }` |
+| `services` | `{ eyebrow, heading, items[] }` — each item: `{ title, price, description }` |
+| `portfolio` | `{ eyebrow, heading, note, items[] }` — each item: `{ label, image? }` |
+| `testimonial` | `{ quote, cite }` |
+| `booking` | `{ heading, text, calendlyUrl, ctaLabel }` |
+| `contact` | `{ email, phone, location }` |
+| `social` | `{ instagram, pinterest, tiktok }` — empty string if unknown |
+| `footer` | `{ copyrightYear, locationBlurb }` |
+
+Use `site.config.example.json` as the reference when adding fields.
+
+## Rules
+
+- Client content lives in config only — never hardcode in `templates/index.html`
+- CSS variable names are stable: `--ivory`, `--blush`, `--plum`, `--gold`, `--charcoal`, `--rose`, `--line`
+- Images: WebP or JPG in `assets/`; hero ~800×1000, portfolio ~600×690
+- Image paths in config: `hero.jpg` or `assets/hero.jpg`; empty string uses gradient placeholder
+- Service `price` may include HTML (e.g. `/ person` span); `description` is plain text (escaped at build)
+- One page, anchor nav — no routes or frameworks unless explicitly requested
+- Build copies `assets/` → `dist/assets/`; output is always `dist/index.html`
+
+## Build
+
+```bash
+npm run build
+```
+
+After config or asset changes, always rebuild and verify before reporting success.
