@@ -17,15 +17,40 @@
       "rose": "#C97B84"
     }
   },
+  "nav": {
+    "ctaLabel": "Book Me",
+    "servicesLinks": [
+      { "label": "Bridal", "href": "#service-bridal" },
+      { "label": "Special Event", "href": "#service-special-event" }
+    ],
+    "portfolioLinks": [
+      { "label": "Special Moments", "href": "#portfolio-bridal" },
+      { "label": "Editorial & Fashion", "href": "#portfolio-editorial" }
+    ]
+  },
   "hero": {
-    "eyebrow": "Bridal & editorial makeup artistry",
-    "headline": "Makeup that feels like",
-    "headlineEmphasis": "you",
-    "headlineSuffix": ", only more radiant",
-    "lede": "Soft, luminous, long-wearing makeup for weddings, portraits, and special occasions — tailored to your skin and your story.",
-    "ctaPrimary": "Book an appointment",
-    "ctaSecondary": "View my work",
-    "image": ""
+    "slides": [
+      {
+        "eyebrow": "Bridal & editorial makeup artistry",
+        "headline": "Makeup that feels like",
+        "headlineEmphasis": "you",
+        "headlineSuffix": ", only more radiant",
+        "lede": "Soft, luminous, long-wearing makeup for weddings, portraits, and special occasions — tailored to your skin and your story.",
+        "ctaPrimary": "Book your experience",
+        "ctaHref": "#book",
+        "image": ""
+      },
+      {
+        "eyebrow": "For moments that matter",
+        "headline": "Beyond beauty, a look that",
+        "headlineEmphasis": "shines",
+        "headlineSuffix": " in every memory",
+        "lede": "Enhance your features and your confidence with makeup designed to photograph beautifully and last all day.",
+        "ctaPrimary": "Book your experience",
+        "ctaHref": "#book",
+        "image": ""
+      }
+    ]
   },
   "about": {
     "eyebrow": "The artist",
@@ -36,39 +61,54 @@
     ],
     "image": ""
   },
+  "features": {
+    "heading": "Why book with me",
+    "items": [
+      {
+        "title": "100% Customized",
+        "description": "Entirely tailored to you, ensuring a unique, personalized beauty experience."
+      },
+      {
+        "title": "Professional Artist",
+        "description": "Expert skill from a trained artist, guaranteeing top-quality results."
+      },
+      {
+        "title": "Camera-Ready",
+        "description": "Looks built to photograph beautifully in any light, from studio to golden hour."
+      },
+      {
+        "title": "100% Reliable",
+        "description": "Unwavering reliability in delivering consistent, on-time beauty services."
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "About your experience",
+    "heading": "What to expect",
+    "text": "Experience a personalized touch from start to finish. Revel in a comfortable, unhurried session where your natural beauty is enhanced — ideal for any special occasion.",
+    "highlights": [
+      "A consultation before every appointment",
+      "Premium, skin-first products and tools",
+      "Long-wear finishes that photograph beautifully"
+    ]
+  },
   "services": {
     "eyebrow": "Offerings",
-    "heading": "Services",
+    "heading": "Choose your makeup",
     "items": [
       {
         "title": "Bridal",
         "price": "From $250",
-        "description": "Trial session plus wedding-day application, designed to hold through tears, dancing, and every photo."
+        "description": "Trial session plus wedding-day application, designed to hold through tears, dancing, and every photo.",
+        "image": "",
+        "ctaLabel": "Book Me"
       },
       {
-        "title": "Special event",
+        "title": "Special Event",
         "price": "From $120",
-        "description": "Formals, parties, photoshoots — a polished look tailored to the occasion and your outfit."
-      },
-      {
-        "title": "Editorial & creative",
-        "price": "From $180",
-        "description": "Concept-driven makeup for shoots, lookbooks, and portfolios, built from a mood board or brief."
-      },
-      {
-        "title": "Bridal party",
-        "price": "From $95 <span style=\"opacity:.7\">/ person</span>",
-        "description": "Coordinated, camera-ready looks for bridesmaids and family, scheduled alongside the bride."
-      },
-      {
-        "title": "Makeup lesson",
-        "price": "From $150",
-        "description": "A one-on-one session teaching your own routine — everyday, glam, or both."
-      },
-      {
-        "title": "Add-ons",
-        "price": "Varies",
-        "description": "Lashes, airbrush finish, touch-up kits, and travel to your venue."
+        "description": "Formals, parties, photoshoots — a polished look tailored to the occasion and your outfit.",
+        "image": "",
+        "ctaLabel": "Book Me"
       }
     ]
   },
@@ -76,18 +116,50 @@
     "eyebrow": "Recent work",
     "heading": "Portfolio",
     "note": "Placeholder tiles — swap in your own photos.",
-    "items": [
-      { "label": "Bridal, June", "image": "" },
-      { "label": "Editorial shoot", "image": "" },
-      { "label": "Golden hour glam", "image": "" },
-      { "label": "Soft everyday", "image": "" },
-      { "label": "Bridal party", "image": "" },
-      { "label": "Studio portrait", "image": "" }
+    "categories": [
+      {
+        "id": "bridal",
+        "label": "Special Moments",
+        "items": [
+          { "label": "Bridal, June", "image": "" },
+          { "label": "Bridal party", "image": "" }
+        ]
+      },
+      {
+        "id": "editorial",
+        "label": "Editorial & Fashion",
+        "items": [
+          { "label": "Editorial shoot", "image": "" },
+          { "label": "Studio portrait", "image": "" }
+        ]
+      }
     ]
   },
-  "testimonial": {
-    "quote": "She listened to exactly what I wanted, and somehow made me look like the best version of myself. Everyone at the wedding asked who did my makeup.",
-    "cite": "— A recent bride"
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What clients say",
+    "items": [
+      {
+        "quote": "She listened to exactly what I wanted, and somehow made me look like the best version of myself. Everyone at the wedding asked who did my makeup.",
+        "cite": "— A recent bride"
+      },
+      {
+        "quote": "My makeup lasted from the first photo at 8am through the last dance at midnight.",
+        "cite": "— Special event client"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Beauty journal",
+    "heading": "Tips, tricks & top picks",
+    "items": [
+      {
+        "title": "Five products I use on every bride",
+        "date": "Coming soon",
+        "excerpt": "The skin-prep and long-wear staples in my kit that keep makeup fresh from first look to last dance.",
+        "href": "#"
+      }
+    ]
   },
   "booking": {
     "heading": "Let's find your date",
